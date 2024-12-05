@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="daysApp">
+<head>
+    <title>Days Example with ng-switch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+    <div ng-init="days=2;">
+
+        <div ng-switch="days">
+            <div ng-switch-when="1">
+                <h1>Monday</h1>
+            </div>
+            
+            <div ng-switch-when="2">
+                <h1>Tuesday</h1>
+            </div>
+            
+            <div ng-switch-when="3">
+                <h1>Wednesday</h1>
+            </div>
+
+            <div ng-switch-when="4">
+                <h1>Thursday</h1>
+            </div>
+            
+            <div ng-switch-when="5">
+                <h1>Friday</h1>
+            </div>
+            
+            <div ng-switch-when="6">
+                <h1>Saturday</h1>
+            </div>
+
+            <div ng-switch-when="7">
+                <h1>Sunday</h1>
+            </div>
+            
+            <div ng-switch-default>
+                <h1>Please select a valid day number (1-7).</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        angular.module('daysApp', []);
+    </script>
+
+</body>
+</html>
